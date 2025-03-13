@@ -1,0 +1,23 @@
+[
+        {
+                "username" : "533894",
+                "password" : "Password@123",
+                "employee" : "Bhavadarani Varadarajan",
+                "type" : "PTO",
+                "balance" : "23"
+        },
+        {
+                "username" : "533051",
+                "password" : "1725@Kousi",
+                "employee" : "Kousalya Chakkaravarthi",
+                "type" : "PTO",
+                "balance" : "11"
+        },
+        {
+                "username" : "533039",
+                "password" : "Nive@10ma",
+                "employee" : "Niveditha Namuduri",
+                "type" : "PTO",
+                "balance" : "21"
+        }
+]

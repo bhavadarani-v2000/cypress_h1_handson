@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-16T04:55:42.667Z",
+    "end": "2024-12-16T04:57:39.954Z",
+    "duration": 117287,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "de2e13e8-22af-41cb-9f20-29d84081548f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\GreyTHr_Grid.cy.js",
+      "file": "cypress\\e2e\\GreyTHr_Grid.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8447a170-67fa-4c73-b9dc-e4e65a2e1248",
+          "title": "GreyTHr",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate Calendar Month by Month",
+              "fullTitle": "GreyTHr Validate Calendar Month by Month",
+              "timedOut": null,
+              "duration": 110459,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n    \"value\": \"cypress\\\\e2e\\\\GreyTHr_Grid.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\GreyTHr_Grid.cy.js\\\\FullPage_July 2024.png\",\n        \"\\\\GreyTHr_Grid.cy.js\\\\FullPage_Aug 2024.png\",\n        \"\\\\GreyTHr_Grid.cy.js\\\\FullPage_Sep 2024.png\",\n        \"\\\\GreyTHr_Grid.cy.js\\\\FullPage_October 2024.png\",\n        \"\\\\GreyTHr_Grid.cy.js\\\\FullPage_November 2024.png\",\n        \"\\\\GreyTHr_Grid.cy.js\\\\FullPage_December 2024.png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.visit(\"https://infotrellis.greythr.com\");\n// Login process\ncy.get('#username').clear().type(results[0]);\ncy.get('#password').clear().type(results[1]);\ncy.get(\"button[type='submit']\").click();\n// Navigate to Attendance Info\n// cy.get(\"div[class='image-hamburger hamburger-container ng-star-inserted']\").click();\ncy.xpath(\"//gt-sidebar[@class='ng-star-inserted']//gt-ess-menu[@class='ng-star-inserted hydrated']\").shadow().find('img[alt=\"attendance\"]').click({\n  force: true\n});\ncy.xpath(\"//gt-sidebar[@class='ng-star-inserted']//gt-ess-menu[@class='ng-star-inserted hydrated']\").shadow().contains(\"Attendance Info\").click({\n  force: true\n});\n// cy.get(\"div[class='image-drawer drawer-container ng-star-inserted']\").last().click();\ncy.get(\"h1[class='text-secondary-600 mt-2x mb-1x text-base font-normal ng-star-inserted']\").should('have.text', ' Attendance Info ');\nfor (let i = 0; i < 6; i++) {\n  cy.get(prevButtonSelector).click();\n}\n// Iterate over each month's data\nObject.entries(calendarDataByMonth).forEach(([month, calendarData]) => {\n  cy.log(`Validating data for ${month}`);\n  // Validate the month by navigating\n  cy.get(monthSelector).invoke('text').then(currentMonth => {\n    if (currentMonth !== month) {\n      cy.log(`Navigating to ${month}`);\n      if (currentMonth < month) {\n        cy.get(nextButtonSelector).click();\n      } else {\n        cy.get(prevButtonSelector).click();\n      }\n    }\n  });\n  cy.xpath(calendarBodySelector, {\n    timeout: 1000\n  }).should('be.visible').then(() => {\n    cy.screenshot(`FullPage_${month}`, {\n      capture: 'fullPage'\n    });\n  });\n  // Validate calendar data for the current month\n  cy.xpath(calendarBodySelector, {\n    timeout: 1000\n  }).within(() => {\n    // Collect all calendar cells and validate for each date\n    cy.get(\"gt-attendance-calendar-cell[style^='background: rgb'] span[class='cell-date']\").each($cell => {\n      const cellDate = $cell.text().trim(); // Extract the text from the cell\n      const matchingData = calendarData.find(({\n        date\n      }) => date.toString() === cellDate); // Find matching data\n      if (matchingData) {\n        const {\n          date,\n          status\n        } = matchingData;\n        // Verify the date and status\n        cy.wrap($cell).parents(\".gt-calendar-cell\").within(() => {\n          cy.get(\"span[class='cell-date']\").should('have.text', date.toString()); // Verify the date\n          cy.get('.status .text-4').invoke('text').should('eq', status); // Verify the status\n        });\n      }\n    });\n  });\n});",
+              "err": {},
+              "uuid": "2f7ee785-d50a-4581-a782-1e968f425f20",
+              "parentUUID": "8447a170-67fa-4c73-b9dc-e4e65a2e1248",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2f7ee785-d50a-4581-a782-1e968f425f20"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 110459,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportDir": "cypress\\Reports\\Mochawesome\\.jsons",
+        "reportPageTitle": "Mochawesome Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "html": false,
+        "json": true,
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

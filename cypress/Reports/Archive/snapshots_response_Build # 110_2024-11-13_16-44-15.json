@@ -1,0 +1,280 @@
+{
+  "data": [
+    {
+      "type": "snapshots",
+      "id": "2032355071",
+      "attributes": {
+        "name": "Mobile_En1",
+        "review-state": "unreviewed",
+        "review-state-reason": "unreviewed_comparisons",
+        "fingerprint": "e6c1055fbdde1d68fd622f5844206b6f2828bd7a",
+        "total-open-comments": 0,
+        "is-reintroduced": false,
+        "enable-javascript": false,
+        "enable-layout": false,
+        "diff-ratio": 0.01436614875,
+        "layout-warning": false,
+        "renderer-layout-warning-text": null,
+        "scope-selector": null,
+        "display-name": "Mobile Phones: Buy New Mobiles Online at Best Prices in India | Buy Cell Phones Online - Amazon.in",
+        "test-case-id": null,
+        "test-case-name": null,
+        "tag-ids": [],
+        "created-at": "2024-11-10T10:14:26.000Z"
+      },
+      "links": {
+        "self": "/api/v1/snapshots/2032355071"
+      },
+      "relationships": {
+        "build": {
+          "data": {
+            "type": "builds",
+            "id": "37300772"
+          }
+        },
+        "test-case": {
+          "links": {
+            "self": "/api/v1/snapshots/2032355071/relationships/test-case",
+            "related": "/api/v1/snapshots/2032355071/test-case"
+          },
+          "data": null
+        },
+        "latest-changed-ancestor": {
+          "links": {
+            "related": "/api/v1/snapshots/2032355071/latest-changed-ancestor"
+          }
+        },
+        "screenshots": {},
+        "comparisons": {
+          "data": [
+            {
+              "type": "comparisons",
+              "id": "3485313200"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313201"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313202"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313203"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313204"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313205"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313206"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313207"
+            }
+          ]
+        },
+        "ignored-regions": {
+          "data": []
+        },
+        "missing-resources": {
+          "links": {
+            "self": "/api/v1/snapshots/2032355071/relationships/missing-resources",
+            "related": "/api/v1/snapshots/2032355071/missing-resources"
+          }
+        }
+      }
+    },
+    {
+      "type": "snapshots",
+      "id": "2032355133",
+      "attributes": {
+        "name": "Sell_En1",
+        "review-state": "unreviewed",
+        "review-state-reason": "unreviewed_comparisons",
+        "fingerprint": "83091fb06abf77b8a76851447aebc9fa3d495ff8",
+        "total-open-comments": 0,
+        "is-reintroduced": false,
+        "enable-javascript": false,
+        "enable-layout": false,
+        "diff-ratio": 0.039268425,
+        "layout-warning": false,
+        "renderer-layout-warning-text": null,
+        "scope-selector": null,
+        "display-name": "Amazon.in: : All Categories",
+        "test-case-id": null,
+        "test-case-name": null,
+        "tag-ids": [],
+        "created-at": "2024-11-10T10:17:02.000Z"
+      },
+      "links": {
+        "self": "/api/v1/snapshots/2032355133"
+      },
+      "relationships": {
+        "build": {
+          "data": {
+            "type": "builds",
+            "id": "37300772"
+          }
+        },
+        "test-case": {
+          "links": {
+            "self": "/api/v1/snapshots/2032355133/relationships/test-case",
+            "related": "/api/v1/snapshots/2032355133/test-case"
+          },
+          "data": null
+        },
+        "latest-changed-ancestor": {
+          "links": {
+            "related": "/api/v1/snapshots/2032355133/latest-changed-ancestor"
+          }
+        },
+        "screenshots": {},
+        "comparisons": {
+          "data": [
+            {
+              "type": "comparisons",
+              "id": "3485313362"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313363"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313364"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313365"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313366"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313367"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313368"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313369"
+            }
+          ]
+        },
+        "ignored-regions": {
+          "data": []
+        },
+        "missing-resources": {
+          "links": {
+            "self": "/api/v1/snapshots/2032355133/relationships/missing-resources",
+            "related": "/api/v1/snapshots/2032355133/missing-resources"
+          }
+        }
+      }
+    },
+    {
+      "type": "snapshots",
+      "id": "2032355151",
+      "attributes": {
+        "name": "Electronic_En1",
+        "review-state": "unreviewed",
+        "review-state-reason": "unreviewed_comparisons",
+        "fingerprint": "fbbd473f9e56d423f3b44f6810db38a2b6e975a9",
+        "total-open-comments": 0,
+        "is-reintroduced": false,
+        "enable-javascript": false,
+        "enable-layout": false,
+        "diff-ratio": 0.00026035535,
+        "layout-warning": false,
+        "renderer-layout-warning-text": null,
+        "scope-selector": null,
+        "display-name": "Buy Electronics Online with Up to 70% OFF at Amazon.in",
+        "test-case-id": null,
+        "test-case-name": null,
+        "tag-ids": [],
+        "created-at": "2024-11-10T10:17:40.000Z"
+      },
+      "links": {
+        "self": "/api/v1/snapshots/2032355151"
+      },
+      "relationships": {
+        "build": {
+          "data": {
+            "type": "builds",
+            "id": "37300772"
+          }
+        },
+        "test-case": {
+          "links": {
+            "self": "/api/v1/snapshots/2032355151/relationships/test-case",
+            "related": "/api/v1/snapshots/2032355151/test-case"
+          },
+          "data": null
+        },
+        "latest-changed-ancestor": {
+          "links": {
+            "related": "/api/v1/snapshots/2032355151/latest-changed-ancestor"
+          }
+        },
+        "screenshots": {},
+        "comparisons": {
+          "data": [
+            {
+              "type": "comparisons",
+              "id": "3485313401"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313402"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313403"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313404"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313405"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313406"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313407"
+            },
+            {
+              "type": "comparisons",
+              "id": "3485313408"
+            }
+          ]
+        },
+        "ignored-regions": {
+          "data": []
+        },
+        "missing-resources": {
+          "links": {
+            "self": "/api/v1/snapshots/2032355151/relationships/missing-resources",
+            "related": "/api/v1/snapshots/2032355151/missing-resources"
+          }
+        }
+      }
+    }
+  ]
+}

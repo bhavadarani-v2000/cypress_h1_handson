@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Report</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      background-color: #2e3b4e;
+      color: #fff;
+      padding: 30px;
+      border-bottom: 4px solid #1f2a35;
+    }
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+    header p {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    header a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .logo {
+      width: 140px;
+      margin-bottom: 20px;
+    }
+    .summary, .test-snapshots {
+      margin: 30px;
+      padding: 25px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      margin-bottom: 50px;
+    }
+    .summary h2, .test-snapshots h3 {
+      color: #2e3b4e;
+      font-size: 28px;
+    }
+    .summary table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 20px; /* Increased font size */
+    }
+    .summary table th, .summary table td {
+      padding: 18px; /* Increased padding for better visibility */
+      text-align: left;
+      border: 2px solid #ddd; /* Thicker borders */
+      font-weight: bold; /* Bold the text */
+    }
+    .summary table th {
+      background-color: #2e3b4e;
+      color: #fff;
+      font-size: 22px; /* Larger font size for headers */
+    }
+    .summary table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .summary table tr:hover {
+      background-color: #e2e2e2;
+      cursor: pointer; /* Added cursor change on hover */
+    }
+    .test-snapshots ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .test-snapshots li {
+      background-color: #f7f7f7;
+      margin: 12px 0;
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold; /* Bold the snapshot items */
+    }
+    .test-snapshots li strong {
+      color: #2e3b4e;
+    }
+    .test-snapshots li .diff-ratio {
+      font-weight: bold;
+      font-size: 22px; /* Larger font size for diff ratio */
+    }
+    .test-snapshots li .green {
+      color: #28a745;
+    }
+    .test-snapshots li .red {
+      color: #dc3545;
+    }
+    footer {
+      text-align: center;
+      background-color: #2e3b4e;
+      color: #fff;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Placeholder for Logo -->
+    <img src="C:\Cypress Project\CypressNewProject\cypress\Reports\OIP.jfif" alt="Logo" class="logo">
+    <h1>Test Report</h1>
+  </header>
+
+  <section class="summary">
+    <h2>Build Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Build Number</th>
+          <th>Percy URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= snapshotDifferences.buildNumber %></td>
+          <td><a href="<%= snapshotDifferences.webUrl %>" target="_blank"><%= snapshotDifferences.webUrl %></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="summary">
+    <h2>Page Load Times</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Page Name</th>
+          <th>Load Time (s)</th>
+          <th>Timestamp</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% pageLoadData.forEach(page => { %>
+          <tr>
+            <td><%= page.label %></td>
+            <td><%= page.loadTime %></td>
+            <td><%= page.timestamp %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="test-snapshots">
+    <h3>Snapshots</h3>
+    <ul>
+      <% snapshotDifferences.snapshots.forEach(snapshot => { %>
+        <li>
+          <strong><%= snapshot.name %></strong> - Diff Ratio: 
+          <span class="diff-ratio <%= snapshot.diffRatio === 0 ? 'green' : 'red' %>">
+            <%= snapshot.diffRatio %>%
+          </span>
+        </li>
+      <% }) %>
+    </ul>
+  </section>
+  <br></br>
+  <footer>
+    <p>&copy; <%= new Date().getFullYear() %> Your Company. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

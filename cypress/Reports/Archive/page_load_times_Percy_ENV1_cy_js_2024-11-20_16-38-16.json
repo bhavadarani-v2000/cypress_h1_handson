@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Homepage",
+    "pageLoadTime": 6947,
+    "timestamp": "2024-11-20T10:52:56.770Z"
+  },
+  {
+    "label": "Mobile Page",
+    "pageLoadTime": 4579,
+    "timestamp": "2024-11-20T10:53:01.459Z"
+  },
+  {
+    "label": "Sell Page",
+    "pageLoadTime": 3064,
+    "timestamp": "2024-11-20T10:53:27.244Z"
+  },
+  {
+    "label": "Electronics Page",
+    "pageLoadTime": 7220,
+    "timestamp": "2024-11-20T10:53:41.475Z"
+  }
+]

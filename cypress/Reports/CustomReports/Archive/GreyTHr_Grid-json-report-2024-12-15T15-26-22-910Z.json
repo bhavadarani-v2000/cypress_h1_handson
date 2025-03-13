@@ -1,0 +1,41 @@
+{
+  "suites": [
+    {
+      "fileName": "cypress\\e2e\\GreyTHr_Grid.cy.js",
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: Timed out retrying after 50000ms: expected 'R' to equal undefined\n    at Context.eval (webpack://cypressnewproject/./cypress/e2e/GreyTHr_Grid.cy.js:69:59)",
+          "duration": 158824,
+          "state": "failed",
+          "title": [
+            "GreyTHr",
+            "Validate Calendar Month by Month"
+          ]
+        }
+      ],
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0,
+      "duration": 162565,
+      "screenshots": [
+        "C:\\Cypress_Project\\CypressNewProject\\cypress\\screenshots\\GreyTHr_Grid.cy.js\\GreyTHr -- Validate Calendar Month by Month (failed).png"
+      ],
+      "videos": [
+        "C:\\Cypress_Project\\CypressNewProject\\cypress\\videos\\GreyTHr_Grid.cy.js.mp4"
+      ],
+      "screenshotsPath": "C:\\Cypress_Project\\CypressNewProject\\cypress\\screenshots\\GreyTHr_Grid.cy.js",
+      "videosPath": "C:\\Cypress_Project\\CypressNewProject\\cypress\\videos\\GreyTHr_Grid.cy.js.mp4"
+    }
+  ],
+  "totalTests": 1,
+  "totalPassed": 0,
+  "totalFailed": 1,
+  "totalSkipped": 0,
+  "totalDuration": 162565,
+  "timestamp": "12/15/2024, 8:48:44 PM"
+}

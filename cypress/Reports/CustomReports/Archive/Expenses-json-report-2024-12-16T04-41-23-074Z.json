@@ -1,0 +1,41 @@
+{
+  "suites": [
+    {
+      "fileName": "cypress\\e2e\\Expenses.cy.js",
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 36749,
+          "state": "passed",
+          "title": [
+            "Expenses Page",
+            "Save and Close Button - no date"
+          ]
+        }
+      ],
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0,
+      "duration": 36765,
+      "screenshots": [
+        "C:\\Cypress_Project\\CypressNewProject\\cypress\\screenshots\\Expenses.cy.js\\Expenses Page -- Save and Close Button - no date.png"
+      ],
+      "videos": [
+        "C:\\Cypress_Project\\CypressNewProject\\cypress\\videos\\Expenses.cy.js.mp4"
+      ],
+      "screenshotsPath": "C:\\Cypress_Project\\CypressNewProject\\cypress\\screenshots\\Expenses.cy.js",
+      "videosPath": "C:\\Cypress_Project\\CypressNewProject\\cypress\\videos\\Expenses.cy.js.mp4"
+    }
+  ],
+  "totalTests": 1,
+  "totalPassed": 1,
+  "totalFailed": 0,
+  "totalSkipped": 0,
+  "totalDuration": 36765,
+  "timestamp": "12/16/2024, 9:58:12 AM"
+}

@@ -1,0 +1,37 @@
+[
+    {
+        "week" : "Time Card: 6/23/24 -\n 6/29/24",
+        "status" : "Submitted",
+        "total_hours" : "48.00",
+        "project_code" : ["DELL_MCUS_NSTAR_PRJ_0424|CPD | 1.0Billable Client Work - 70978"],
+        "each_hours" : ["Monday, June 24; 10.00 HoursTuesday, June 25; 10.00 HoursWednesday, June 26; 10.00 HoursThursday, June 27; 10.00 HoursFriday, June 28; 8.00 Hours"]
+    },
+    {
+        "week" : "Time Card: 6/16/24 -\n 6/22/24",
+        "status" : "Approved",
+        "total_hours" : "40.00",
+        "project_code" : ["DELL_MCUS_NSTAR_PRJ_0424|CPD | 1.0Billable Client Work - 70978"],
+        "each_hours" : ["Monday, June 17; 8.00 HoursTuesday, June 18; 8.00 HoursWednesday, June 19; 8.00 HoursThursday, June 20; 8.00 HoursFriday, June 21; 8.00 Hours"]
+    },
+    {
+        "week" : "Time Card: 6/9/24 -\n 6/15/24",
+        "status" : "Approved",
+        "total_hours" : "40.00",
+        "project_code" : ["DELL_MCUS_NSTAR_PRJ_0424|CPD | 1.0Billable Client Work - 70978"],
+        "each_hours" : ["Monday, June 10; 8.00 HoursTuesday, June 11; 8.00 HoursWednesday, June 12; 8.00 HoursThursday, June 13; 8.00 HoursFriday, June 14; 8.00 Hours"]
+    },
+    {
+        "week" : "Time Card: 6/2/24 -\n 6/8/24",
+        "status" : "Approved",
+        "total_hours" : "40.00",
+        "project_code" : ["DELL_MCUS_NSTAR_PRJ_0424|CPD | 1.0Billable Client Work - 70978"],
+        "each_hours" : ["Monday, June 03; 8.00 HoursTuesday, June 04; 8.00 HoursWednesday, June 05; 8.00 HoursThursday, June 06; 8.00 HoursFriday, June 07; 8.00 Hours"]
+    },
+    {
+        "week" : "Time Card: 5/19/24 -\n 5/25/24",
+        "status" : "Approved",
+        "total_hours" : "40.00",
+        "project_code" : ["DELL_MCUS_NSTAR_PRJ_0424|CPD | 1.0Billable Client Work - 70978"],
+        "each_hours" : ["Monday, May 20; 8.00 HoursTuesday, May 21; 8.00 HoursWednesday, May 22; 8.00 HoursThursday, May 23; 8.00 HoursFriday, May 24; 8.00 Hours"]
+    }
+]

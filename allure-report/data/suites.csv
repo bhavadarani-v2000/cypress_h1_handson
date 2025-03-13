@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","11060","Expenses Claim Creation - no date","","Tue Nov 19 18:49:11 IST 2024","passed","Tue Nov 19 18:49:22 IST 2024","","Expenses Page","Expenses Page","Expenses Claim Creation - no date"
+"","13481","Expenses Claim Creation - no type","","Tue Nov 19 18:49:32 IST 2024","passed","Tue Nov 19 18:49:46 IST 2024","","Expenses Page","Expenses Page","Expenses Claim Creation - no type"
+"","59753","Expenses Claim Creation - All fields","","Tue Nov 19 18:47:33 IST 2024","failed","Tue Nov 19 18:48:33 IST 2024","","Expenses Page","Expenses Page","Expenses Claim Creation - All fields"
+"","10018","Delete entries","","Tue Nov 19 18:50:00 IST 2024","passed","Tue Nov 19 18:50:10 IST 2024","","Expenses Page","Expenses Page","Delete entries"
+"","10645","Expenses Claim Creation - no Currency Type","","Tue Nov 19 18:49:22 IST 2024","passed","Tue Nov 19 18:49:32 IST 2024","","Expenses Page","Expenses Page","Expenses Claim Creation - no Currency Type"
+"","14216","Expenses Claim Creation - no Currency Value","","Tue Nov 19 18:49:46 IST 2024","passed","Tue Nov 19 18:50:00 IST 2024","","Expenses Page","Expenses Page","Expenses Claim Creation - no Currency Value"

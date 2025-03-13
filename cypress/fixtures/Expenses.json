@@ -1,0 +1,16 @@
+{
+  "username" : "533894",
+  "password" : "Password@123",
+  "date" : "5/9/24",
+  "amount" : 1000,
+  "fxtr_file" : "Expenses.json",
+  "no_date" : "Example: 12/16/24Enter a date between 5/3/21 and 12/17/24.",
+  "no_cur_type" : "\tError: A value is required.\n\t\nYou must enter a value.",
+  "no_cur" : "0.00",
+  "b_cancel" : "You have unsaved changes. Do you want to continue?",
+  "Save_Close_no_cur" : "\t\tINR\t\n\t",
+  "b_done" : "Create Expense Item",
+  "no_type" : "You must complete the required fields.",
+  "types" : "Education/Certification (non-project related)",
+  "alert" : "Expense report saved."
+}

@@ -1,0 +1,73 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1732022253645' stop='1732022410707'>
+    <name>Expenses Page</name>
+    <title>Expenses Page</title>
+    <test-cases>
+        <test-case start='1732022253645' status='failed' stop='1732022313398'>
+            <name>Expenses Claim Creation - All fields</name>
+            <title>Expenses Claim Creation - All fields</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 29990ms: Expected to find element: `//span[@id='pt1:_FOr1:0:_FONSr2:0:MAnt2:0:AP1:UPsp1:a1:dciAvsd:lvAvsd:0:otAvsddDiFile']`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 29990ms: Expected to find element: `//span[@id='pt1:_FOr1:0:_FONSr2:0:MAnt2:0:AP1:UPsp1:a1:dciAvsd:lvAvsd:0:otAvsddDiFile']`, but never found it.
+                    at Context.eval (webpack://cypressnewproject/./cypress/e2e/Oracle_H2/Expenses-Create_Another_Button.cy.js:15:106)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1732022313482' status='failed' stop='1732022351130'>
+            <name>Delete entries</name>
+            <title>Delete entries</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 29990ms: expected '&lt;button#pt1:_FOr1:1:_FONSr2:0:_FOTsr1:0:pt0:pt12:r2:0:cb291.x3ee.x7j.p_AFDisabled>' to be 'enabled'</message>
+                <stack-trace>AssertionError: Timed out retrying after 29990ms: expected '&lt;button#pt1:_FOr1:1:_FONSr2:0:_FOTsr1:0:pt0:pt12:r2:0:cb291.x3ee.x7j.p_AFDisabled>' to be 'enabled'
+                    at Context.eval (webpack://cypressnewproject/./cypress/support/BeforeEach_DeleteEntries.js:29:84)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1732022351176' status='passed' stop='1732022362236'>
+            <name>Expenses Claim Creation - no date</name>
+            <title>Expenses Claim Creation - no date</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1732022362260' status='passed' stop='1732022372905'>
+            <name>Expenses Claim Creation - no Currency Type</name>
+            <title>Expenses Claim Creation - no Currency Type</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1732022372936' status='passed' stop='1732022386417'>
+            <name>Expenses Claim Creation - no type</name>
+            <title>Expenses Claim Creation - no type</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1732022386444' status='passed' stop='1732022400660'>
+            <name>Expenses Claim Creation - no Currency Value</name>
+            <title>Expenses Claim Creation - no Currency Value</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1732022400689' status='passed' stop='1732022410707'>
+            <name>Delete entries</name>
+            <title>Delete entries</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
