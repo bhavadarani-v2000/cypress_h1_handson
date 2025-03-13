@@ -1,6 +1,3 @@
 node_modules
 allure-report/
 allure-results/
-generate-report-custom.js
-generate-report-percy.js
-oracle.js
