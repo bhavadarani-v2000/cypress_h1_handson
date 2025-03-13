@@ -1,3 +1,6 @@
 node_modules
 allure-report/
 allure-results/
+Oracle.js
+Snap_test.js
+package-lock.json
