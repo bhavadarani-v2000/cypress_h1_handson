@@ -1,0 +1,12 @@
+name : E2E
+
+on: [push]
+jobs :
+  cypress-run :
+    runs-on : ubuntu-latest
+    
+    steps :
+      - name: test
+        uses: actions/checkout@v3
+      - name: Cypress un
+        uses: cypress.io/github-action@v5  
