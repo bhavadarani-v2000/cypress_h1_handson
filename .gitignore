@@ -4,3 +4,6 @@ allure-results/
 Oracle.js
 Snap_test.js
 package-lock.json
+e2e/old/
+e2e/Oracle_H2/
+e2e/Percy/
