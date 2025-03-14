@@ -50,9 +50,4 @@ describe('Percy', () => {
       cy.percySnapshot('Electronic_En1');
       cy.screenshot('Electronic_En1');
     });
-  
-    after(() => {
-      // Write collected page load times to a JSON file at the end of the test
-      cy.writeFile('cypress/Reports/page_load_times.json', pageLoadTimes);
-    });
   });
